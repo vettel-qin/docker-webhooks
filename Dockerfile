@@ -8,7 +8,7 @@ WORKDIR /code
 
 ADD package.json /code
 
-RUN npm add yarn -g
+# RUN npm add yarn -g
 
 RUN yarn
 
@@ -19,3 +19,5 @@ RUN yarn build
 FROM nginx:alpine
 
 COPY --from=builder /code/build /usr/share/nginx/html
+
+EXPOSE 80
