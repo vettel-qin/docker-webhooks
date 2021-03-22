@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          hello react docker
+          hello 2021
         </p>
       </header>
     </div>
