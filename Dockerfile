@@ -18,6 +18,6 @@ RUN yarn build
 
 FROM nginx:alpine
 
-COPY --from=builder /code/build /usr/share/nginx/html
+COPY --from=builder code/build /usr/share/nginx/html
 
 EXPOSE 80
